@@ -1,0 +1,31 @@
+doctype html
+mixin numbers(num)
+  -let i=1
+  ul.content__list 
+    while i<=num 
+      li.content__item= i
+      -i++
+    
+
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Interactive Rating Component
+    link(rel="stylesheet", href="./style.css")
+  body 
+    .card
+      .header 
+        .header__logo 
+          a.header__link(href="#") 
+            img.header__image(src="./assets/images/icon-star.svg", alt="logo")
+      .content 
+        h1.content__title How did we do?
+        p.content__text Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering! 
+        .content__numbers 
+          +numbers(5)
+        a(href="./thank-you.html")
+          button.content__button Submit
+
+    script(src="./app.js")

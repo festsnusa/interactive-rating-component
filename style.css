@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+html {
+  font-family: 'Overpass', sans-serif;
+}
+
+body {
+  background-color: #121417;
+}
+
+.card {
+  padding: 2.5rem;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #1F262F;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 1.5rem;
+  margin: 0 auto;
+}
+
+.header__image {
+  background-position: 50%;
+  border-radius: 50%;
+  background-color: #2A2D35;
+  padding: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.content__title {
+  color: white;
+}
+
+.content__text {
+  width: 85%;
+  line-height: 1.5rem;
+  color: #959eac;
+  font-size: 0.938rem;
+  font-weight: 400;
+}
+
+.content__numbers {
+  width: 100%;
+}
+
+.content__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0;
+}
+
+.content__item, .content__item_active {
+  list-style: none;
+  color: #959eac;
+  background-position: 50%;
+  border-radius: 50%;
+  background-color: #2A2D35;
+  padding: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.content__item:hover, .content__item_active:hover {
+  background-color: #959eac;
+  color: white;
+}
+
+.content__item_active {
+  background-color: #fb7413;
+  color: white;
+}
+
+.content__button {
+  margin-top: 0.9rem;
+  width: 100%;
+  pointer-events: none;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  letter-spacing: 0.3rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.content__button:hover {
+  background-color: white;
+  color: #fb7413;
+}
+
+.content__button_active {
+  background-color: #fb7413;
+  pointer-events: all;
+}
+
+.content__button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.thank-you {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.thank-you__caption {
+  color: #fb7413;
+  border-radius: 1.5rem;
+  background-color: #252d37;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.thank-you__image {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.thank-you__header {
+  color: white;
+}
+
+.thank-you__text {
+  color: #7c8798;
+  line-height: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */
